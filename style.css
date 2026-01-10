@@ -1,0 +1,622 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #d8dfee;
+    color: white;
+}
+
+
+/* Navbar */
+/*.navbar {
+    background-color: #4C587D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+*/
+  /* Navbar Container */
+/* ================= NAVBAR STYLE ================= */
+
+/* Navbar container */
+.main-navbar {
+    background-color: #BAD0E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #93A0C6;
+}
+
+.support-section {
+    background-color: #4C587D; /* من ألوانك */
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.support-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.support-box {
+    background-color: #788AB2;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.support-box h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    border-bottom: 2px solid #BAD0E7;
+    padding-bottom: 8px;
+}
+
+.support-box ul {
+    list-style: disc;
+    padding-right: 20px;
+}
+
+.support-box li,
+.support-box p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ===== LEFT SIDE ===== */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Logo + flag box */
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo text */
+.logo-text {
+    font-size: 26px;
+    font-weight: 700;
+    color: #4C587D;
+}
+
+.logo-text span {
+    font-weight: 500;
+    color: #788AB2;
+}
+
+/* Flag */
+.flag {
+    width: 26px;
+    height: auto;
+}
+
+/* Menu list */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* ===== COMMON NAV LINKS (IMPORTANT) ===== */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #4C587D;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+/* Underline animation (works for ALL nav-link) */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #4C587D;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ===== RIGHT SIDE ===== */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Trips item */
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-item img {
+    width: 20px;
+}
+
+/* ===== ACCOUNT BUTTON ===== */
+.account-btn {
+    border: 2px solid #4C587D;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #4C587D;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for account button */
+.account-btn:hover {
+    background-color: #4C587D;
+    color: white;
+}
+
+/* Account Button */
+.account-btn {
+    border: 2px solid #4C587D;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #4C587D;
+    font-weight: 500;
+}
+
+.account-btn:hover {
+    background-color: #4C587D;
+    color: white;
+}
+
+  /* Hero Section */
+.hero {
+    height: 710px;
+    background-image: url("image/egor-litvinov-RlHI0cCNThY-unsplash.jpg"); /* حطي صورة الباص هون */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+/* Dark overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(76, 88, 125, 0.6 #4C587D); /* #4C587D بشفافية */
+}
+
+/* Text container */
+.hero-overlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-overlay h1 span {
+    color: #BAD0E7; /* لون مسار */
+    font-weight: bold;
+}
+
+.hero-overlay p {
+    font-size: 20px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Booking Section */
+.booking {
+    background-color: #788AB2;
+    width: 85%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Trip Type */
+.trip-type {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.trip-type button {
+    background-color: #93A0C6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.trip-type .active {
+    background-color: #4C587D;
+}
+
+/* Forms */
+.booking-form,
+.login-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+
+
+    /* ===== Booking Form Fields ===== */
+
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Select & Date input */
+.field select,
+.field input[type="date"] {
+    width: 220px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+.search-btn {
+    background-color: #4C587D;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+}
+
+/* Input Field */
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.field input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 220px;
+}
+
+/* Payment */
+.payment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-options {
+    display: flex;
+    gap: 15px;
+}
+
+/* Buttons */
+.search-btn {
+    background-color: #4C587D;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Login Page */
+.login-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.login-box {
+    background-color: #788AB2;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+                                 /* ===== Login Page ===== */
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login-box {
+    background-color: #788AB2;
+    padding: 30px;
+    border-radius: 15px;
+    width: 360px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.field label {
+    color: white;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.field input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.message {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Button */
+.search-btn {
+    background-color: #4C587D;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*1*/
+.support-section {
+    /* ضع مسار الصورة التي رفعتها هنا */
+    background-image: url('image/pngwing.com (3).png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* تجعل الخلفية ثابتة عند التمرير لشكل احترافي */
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* طبقة غطاء هادئة فوق الصورة */
+.support-overlay {
+    background-color: rgba(76, 88, 125, 0.75); /* نفس لونك الأساسي لكن بشفافية */
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.support-section h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* ظل خفيف للنص */
+}
+
+/* حاوية الصناديق لترتيبها بشكل شبكي */
+.support-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1-fr)); /* توزيع تلقائي */
+    gap: 20px;
+}
+
+.support-box {
+    background-color: rgba(120, 138, 178, 0.85); /* صناديق نصف شفافة */
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* إطار رقيق جداً */
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.support-box:hover {
+    transform: translateY(-5px); /* حركة بسيطة عند التمرير */
+}
+
+.support-box h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #BAD0E7;
+    padding-bottom: 10px;
+}
+
+.support-box ul {
+    list-style: none; /* إزالة النقاط التقليدية لمظهر أنظف */
+    padding: 0;
+}
+
+.support-box li, 
+.support-box p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.support-box strong {
+    color: #BAD0E7; /* تمييز العناوين الصغيرة بلون فاتح */
+}
+/*footer*/
+.site-footer {
+    background: linear-gradient(90deg, #4C587D, #788AB2);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+
+/* ===== RESPONSIVE DESIGN (أُضيفت هنا فقط) ===== */
+/* ================================================= */
+
+/* 📱 موبايل */
+@media (max-width: 768px) {
+
+    .main-navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-left,
+    .nav-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 26px;
+    }
+
+    .hero-overlay p {
+        font-size: 16px;
+    }
+
+    .booking {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .booking-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .field select,
+    .field input {
+        width: 100%;
+    }
+
+    .support-container {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer p {
+        font-size: 14px;
+    }
+}
+
+/* 📲 تابلت */
+@media (max-width: 1024px) {
+
+    .booking {
+        width: 90%;
+    }
+
+    .hero-overlay h1 {
+        font-size: 30px;
+    }
+}

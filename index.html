@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widt=device-width, initial-scale=1.0"/>
+    <title>مسار | MasarSh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+ <!-- ================= NAVBAR ================= -->
+<nav class="main-navbar">
+
+    <!-- ===== LEFT SIDE (LOGO + MENU) ===== -->
+ <div class="nav-right">
+
+        <!-- Logo + Flag -->
+        <div class="logo-box">
+            <span class="logo-text">Masar <span>| Sh</span></span>
+            <img src="image/flagg.png" alt="Syrian Revolution Flag" class="flag">
+        </div>
+         <!-- Account Button -->
+        <a href="#" class="account-btn"> <strong> حسابي </strong></a>
+
+         <!-- Login -->
+        <a href="login.html" class="nav-link">  <strong>تسجيل الدخول </strong></a>
+
+<!-- Trips -->
+        <div class="nav-item">
+            <img src="image/pngwing.com.png" alt="Trips">
+            <a href="#" class="nav-link">      <strong> رحلاتي </strong></a>
+        </div>
+
+    </div>
+    <!-- ===== RIGHT SIDE ===== -->
+    <div class="nav-left">
+         <!-- Main Menu -->
+        <ul class="nav-menu">
+            <li>   <a href="#" class="nav-link">   <strong>  حول الموقع </strong>  </a>  </li>
+            <li>   <a href="#support" class="nav-link">   <strong>  الدعم  </strong></a></li>
+        </ul>
+    </div>
+</nav>
+<!-- =============== END NAVBAR =============== -->
+
+
+
+   <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay">
+        <h1> وجِهتُك اختيارك و <span> <strong> مسار </strong> </span> طريقك </h1>
+        <br>  
+       <h2> <p>تذاكر مخفضة لعديدٍ من الوجهات</p> </h2>
+    </div>
+</section>
+
+   
+
+<!-- Booking Section -->
+<section class="booking">
+
+    <!-- Trip Type -->
+    <div class="trip-type">
+        <button class="active">ذهاب فقط</button>
+        <button>ذهاب وعودة</button>
+        <button>وجهات متعددة</button>
+    </div>
+
+    <!-- Booking Form -->
+   <!-- ========== BOOKING FORM ========== -->
+<form class="booking-form">
+
+    <!-- From -->
+    <div class="field">
+        <label for="from">من</label>
+        <select id="from" name="from">
+            <option value="">اختر نقطة الانطلاق</option>
+            <option>حلب</option>
+            <option>دمشق</option>
+            <option>حمص</option>
+            <option>حماة</option>
+            <option>إدلب</option>
+            <option>اللاذقية</option>
+            <option>طرطوس</option>
+            <option>درعا</option>
+            <option>دير الزور</option>
+            <option>الحسكة</option>
+            <option>الرقة</option>
+            <option>السويداء</option>
+            <option>القنيطرة</option>
+        </select>
+    </div>
+
+    <!-- To -->
+    <div class="field">
+        <label for="to">إلى</label>
+        <select id="to" name="to">
+            <option value="">اختر الوجهة</option>
+            <option>حلب</option>
+            <option>دمشق</option>
+            <option>حمص</option>
+            <option>حماة</option>
+            <option>إدلب</option>
+            <option>اللاذقية</option>
+            <option>طرطوس</option>
+            <option>درعا</option>
+            <option>دير الزور</option>
+            <option>الحسكة</option>
+            <option>الرقة</option>
+            <option>السويداء</option>
+            <option>القنيطرة</option>
+        </select>
+    </div>
+
+    <!-- Travel Date -->
+    <div class="field">
+        <label for="date">تاريخ الرحلة</label>
+        <input type="date" id="date" name="date">
+    </div>
+
+
+    <div class="field">
+            <label>عدد الركاب</label>
+            <input type="number" min="1" value="1">
+        </div>
+
+    <!-- Submit -->
+    <button class="search-btn">بحث عن الرحلات</button>
+
+</form>
+<!-- ======== END BOOKING FORM ======== -->
+
+
+        <!-- Payment -->
+        <div class="payment">
+            <label>طريقة الدفع</label>
+            <div class="payment-options">
+                <label>
+                    <input type="radio" name="payment" checked>
+                    كاش
+                </label>
+                <label>
+                    <input type="radio" name="payment">
+                    إلكتروني
+                </label>
+            </div>
+        </div>
+
+        <button class="search-btn">تأكيد الحجز</button>
+
+    </form>
+
+</section>
+<!-- ===== Support Section ===== -->
+<section id="support" class="support-section">
+
+    <h2>الدعم والمساعدة</h2>
+
+    <!-- 1. Cancellation Policy -->
+    <div class="support-box">
+        <h3>سياسة الإلغاء والاسترجاع</h3>
+        <ul>
+            <li><strong>قبل 24 ساعة:</strong> استرجاع كامل المبلغ (تُخصم رسوم التحويل فقط).</li>
+            <li><strong>من 24 إلى 6 ساعات:</strong> استرجاع 50% من قيمة التذكرة.</li>
+            <li><strong>أقل من 6 ساعات:</strong> لا يمكن إلغاء الحجز أو استرداد القيمة.</li>
+            <li><strong>إلغاء من طرفنا:</strong> يتم تعويضك برحلة بديلة فورًا.</li>
+        </ul>
+    </div>
+
+    <!-- 2. Baggage Policy -->
+    <div class="support-box">
+        <h3>سياسة الأمتعة</h3>
+        <ul>
+            <li><strong>حقيبة الشحن:</strong> قطعة واحدة بحد أقصى 20 كجم.</li>
+            <li><strong>حقيبة اليد:</strong> قطعة صغيرة واحدة داخل المقصورة.</li>
+            <li><strong>الوزن الزائد:</strong> يخضع لرسوم إضافية حسب المساحة المتوفرة.</li>
+            <li><strong>المفقودات:</strong> الشركة غير مسؤولة عن الأغراض الثمينة داخل الباص.</li>
+        </ul>
+    </div>
+
+    <!-- 3. FAQ -->
+    <div class="support-box">
+        <h3>الأسئلة الشائعة</h3>
+        <p><strong>س:</strong> هل يجب طباعة التذكرة؟<br>
+           <strong>ج:</strong> لا، تكفي النسخة الإلكترونية على هاتفك.</p>
+
+        <p><strong>س:</strong> متى يجب أن أكون في المحطة؟<br>
+           <strong>ج:</strong> قبل 30 دقيقة على الأقل من موعد الانطلاق.</p>
+
+        <p><strong>س:</strong> هل يمكن تغيير موعد الرحلة؟<br>
+           <strong>ج:</strong> نعم، عبر قسم إدارة الحجز قبل 12 ساعة.</p>
+    </div>
+
+    <!-- 4. Contact -->
+    <div class="support-box">
+        <h3>معلومات التواصل</h3>
+        <p>📧 الدعم الفني: <span>[ضع الإيميل هنا]</span></p>
+        <p>📞 الطوارئ (24/7): <span>911</span></p>
+        <p>📍 المقر الرئيسي: <span>حلب / الباب</span></p>
+    </div>
+</section>
+
+<!--footer-->
+
+       <!-- ===== Footer ===== -->
+<footer class="site-footer">
+    <p>
+        © 2026 جميع الحقوق محفوظة | سوريا – الباب
+    </p>
+</footer>
+
+
+
+</body>
+</html>
