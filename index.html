@@ -2,9 +2,13 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widt=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>مسار | MasarSh</title>
+    
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
 
@@ -22,14 +26,18 @@
         </div>
          <!-- Account Button -->
         <a href="#" class="account-btn"> <strong> حسابي </strong></a>
-
          <!-- Login -->
         <a href="login.html" class="nav-link">  <strong>تسجيل الدخول </strong></a>
+        <a href="#" class="nav-link">  <strong>تسجيل الخروج  </strong></a>
+
+    
+
 
 <!-- Trips -->
         <div class="nav-item">
             <img src="image/pngwing.com.png" alt="Trips">
-            <a href="#" class="nav-link">      <strong> رحلاتي </strong></a>
+            <a href="my-trips.html" class="nav-link"><strong>رحلاتي</strong></a>
+
         </div>
 
     </div>
@@ -126,7 +134,11 @@
         </div>
 
     <!-- Submit -->
-    <button class="search-btn">بحث عن الرحلات</button>
+   <button type="submit" class="search-btn">بحث عن الرحلات</button>
+   <div id="resultsBox" class="results-box"></div>
+   
+   
+
 
 </form>
 <!-- ======== END BOOKING FORM ======== -->
@@ -146,10 +158,12 @@
                 </label>
             </div>
         </div>
+        <div id="form-message" class="form-message"></div>
 
-        <button class="search-btn">تأكيد الحجز</button>
 
-    </form>
+
+
+
 
 </section>
 <!-- ===== Support Section ===== -->
@@ -210,6 +224,10 @@
     </p>
 </footer>
 
+<script src="js/main.js"></script>
+<script src="js/search.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/index-search.js"></script>
 
 
 </body>

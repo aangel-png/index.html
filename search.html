@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>بحث عن رحلة | مسار</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar">
+    <div class="logo">
+        <span>مسار | Masar</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="login.html">تسجيل الدخول</a>
+    </div>
+</nav>
+
+<!-- ===== Search Section ===== -->
+<section class="search-section">
+
+    <h1>ابحث عن رحلتك</h1>
+
+    <form id="searchForm" class="search-box">
+
+        <div class="field">
+            <label>من</label>
+            <select id="from">
+                <option value="">اختر المدينة</option>
+                <option value="دمشق">دمشق</option>
+                <option value="حلب">حلب</option>
+                <option value="حمص">حمص</option>
+                <option value="حماة">حماة</option>
+                <option value="إدلب">إدلب</option>
+                <option value="اللاذقية">اللاذقية</option>
+                <option value="طرطوس">طرطوس</option>
+                <option value="درعا">درعا</option>
+                <option value="ديرالزور">ديرالزور</option>
+                <option value="الحسكة">الحسكة</option>
+                <option value="الرقة">الرقة</option>
+                <option value="السويداء">السويداء</option>
+                <option value="القنيطرة">القنيطرة</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>إلى</label>
+            <select id="to">
+                <option value="">اختر المدينة</option>
+                <option value="دمشق">دمشق</option>
+                <option value="حلب">حلب</option>
+                <option value="حمص">حمص</option>
+                 <option value="حماة">حماة</option>
+                <option value="إدلب">إدلب</option>
+                <option value="اللاذقية">اللاذقية</option>
+                <option value="طرطوس">طرطوس</option>
+                <option value="درعا">درعا</option>
+                <option value="ديرالزور">ديرالزور</option>
+                <option value="الحسكة">الحسكة</option>
+                <option value="الرقة">الرقة</option>
+                <option value="السويداء">السويداء</option>
+                <option value="القنيطرة">القنيطرة</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>التاريخ</label>
+            <input type="date" id="date">
+        </div>
+
+        <button type="submit" class="search-btn">بحث</button>
+
+        <p id="message" class="message"></p>
+
+    </form>
+
+</section>
+
+<script src="js/search.js"></script>
+</body>
+</html>

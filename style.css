@@ -1,10 +1,36 @@
+@font-face {
+    font-family: 'Alexandria';
+    src: url('../fonts/Alexandria-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('../fonts/Alexandria-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('../fonts/Alexandria-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('../fonts/Alexandria-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
 * {
-    box-sizing: border-box;
+    font-family: 'Alexandria', sans-serif;
 }
 
 body {
-    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #788AB2; /* عدّلي حسب تصميمك */
 }
+
 
 
 /* Reset */
@@ -23,17 +49,6 @@ body {
 
 
 /* Navbar */
-/*.navbar {
-    background-color: #4C587D;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 60px;
-}
-*/
-  /* Navbar Container */
-/* ================= NAVBAR STYLE ================= */
-
 /* Navbar container */
 .main-navbar {
     background-color: #BAD0E7;
@@ -212,7 +227,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(76, 88, 125, 0.6 #4C587D); /* #4C587D بشفافية */
+    background-color: rgba(76, 88, 125, 0.6 #4C587D /* بشفافية */); /* #4C587D بشفافية */
 }
 
 /* Text container */
@@ -301,6 +316,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
 
 
 
@@ -344,7 +360,7 @@ body {
     cursor: pointer;
 }
 
-}
+
 
 /* Input Field */
 .field {
@@ -619,4 +635,243 @@ body {
     .hero-overlay h1 {
         font-size: 30px;
     }
+}
+/* search html */
+.search-section {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a;
+    color: white;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 420px;
+    background: #020617;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.search-box h1 {
+    margin-bottom: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.field label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.field input,
+.field select {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: #1d4ed8;
+}
+
+.message {
+    margin-top: 12px;
+    text-align: center;
+}
+
+/*results.html*/
+.results-section {
+    padding: 40px 20px;
+    background: #020617;
+    min-height: calc(100vh - 80px);
+    color: white;
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.trip-card {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.trip-card h3 {
+    margin-bottom: 10px;
+}
+
+.trip-card .price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.book-btn {
+    width: 100%;
+    padding: 10px;
+    background: #22c55e;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background: #16a34a;
+}
+/*confirm.html*/
+.confirm-section {
+    padding: 40px 20px;
+    background: #020617;
+    min-height: calc(100vh - 80px);
+    color: white;
+}
+
+.confirm-box {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.confirm-box p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.confirm-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.confirm-btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+
+/* my-trips.html */
+.my-trips-section {
+    padding: 40px 20px;
+    min-height: calc(100vh - 80px);
+    background: #020617;
+    color: white;
+}
+
+.my-trips-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.trips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.trip-card {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.trip-card p {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.empty-message {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*        تنسيق الكرت    */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.cancel-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background: #dc2626;
+}
+
+/*تنسيق الالغاء*/
+.form-message {
+    display: none;
+    margin: 20px auto;
+    padding: 14px 18px;
+    max-width: 420px;
+
+    background-color: #ffffff;
+    color: #d32f2f;
+
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    border-radius: 12px;
+    border: 2px solid #d32f2f;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-message .icon {
+    font-size: 20px;
+}
+#form-message {
+    display: none !important;
 }
